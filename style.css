@@ -1,0 +1,41 @@
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#app{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    width: 1000px;
+    height:600px;
+    background-image: url("images/background.jpg");
+}
+
+.myDiv{
+    width: 800px;
+    margin-top: 50px;
+    display:flex;
+}
+
+.absolute{
+    position: relative;
+    margin-top: auto;
+}
+.absolute img{
+    max-width: 140px;
+}
+.keydown{
+    display:flex;
+    justify-content: space-between;
+    width:950px;
+    color: blue;
+    margin: 20px;
+}
+.headline, .nameInput{
+    color: white;
+    text-align: center;
+    margin: 10px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumset</title>
+    <!--custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <div id="app">
+        <!--headline name-->
+        <div class="headline">
+            <h1>{{ name }}s drumset</h1>
+        </div>
+
+        <!--drums-->
+        <div class="myDiv">
+            <div class="absolute">
+                <img @click="tom1()" src="images/tom1.png">
+            </div>
+
+            <div class="absolute">
+                <img @click="tom2()" src="images/tom2.png">
+            </div>
+
+            <div class="absolute">
+                <img @click="crash()" src="images/crash.png">
+            </div>
+
+            <div class="absolute">
+                <img @click="snare()" src="images/snare.png">
+            </div>
+
+            <div class="absolute">
+                <img @click="kickBass()" src="images/kick.png">
+            </div>
+
+            <div class="absolute">
+                <img @click="tom3()" src="images/tom3.png">
+            </div>
+
+            <div class="absolute">
+                <img @click="tom4()" src="images/tom4.png">
+            </div>
+
+        </div>
+        <!--keydown event display-->
+        <div class="keydown">
+            <h2>1</h2>
+            <h2>2</h2>
+            <h2>3</h2>
+            <h2>4</h2>
+            <h2>5</h2>
+            <h2>6</h2>
+            <h2>7</h2>
+        </div>
+
+        <!--name input-->
+            <div class="nameInput">
+                <p>Place your own name! <input v-model="name"></p>
+            </div>
+        </div>
+
+    
+
+    <!--vue link-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!--custom js-->
+    <script src="app.js"></script>
+</body>
+</html>
